@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-width {
+  width: 85em;
+  display: flex;
+}
+
+.centered-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.page-main {
+  flex-grow: 1;
+}

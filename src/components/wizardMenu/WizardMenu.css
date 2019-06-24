@@ -1,0 +1,10 @@
+.Wizard-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.Wizard-menu .wizard-buttons {
+  display: flex;
+  flex-direction: row;
+}

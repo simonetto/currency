@@ -1,0 +1,10 @@
+.App-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(196, 196, 196);
+}
+
+.App-footer a {
+  margin-left: 1.5em;
+}
