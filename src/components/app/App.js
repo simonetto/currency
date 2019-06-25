@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <div className="centered-row page-main">
+        <div className="grey-bg"></div>
         <div className="page-width">
           <LeftPanel />
           <RightPanel />

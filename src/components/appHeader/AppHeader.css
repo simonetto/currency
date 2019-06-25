@@ -1,5 +1,6 @@
 .App-header {
   background-color: rgb(50, 50, 60);
+  z-index: 1;
 }
 
 .App-logo {

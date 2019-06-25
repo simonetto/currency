@@ -1,22 +1,23 @@
 .Wizard-button {
   flex: 1;
-  color: rgb(226, 242, 250);
+  color: rgb(177, 191, 198);
 }
 
-.Wizard-button p {
-  margin-left: 2em;
-}
-
-.selected-button {
+.Wizard-button.selected-button {
   color: rgb(110, 192, 230);
 }
 
-.progress {
+.Wizard-button .labels-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.Wizard-button .progress {
   height: 4px;
   background-color: rgb(226, 242, 250);
 }
 
-.selected-button .progress {
+.Wizard-button.selected-button .progress {
   background-color: rgb(110, 192, 230);
 }
 

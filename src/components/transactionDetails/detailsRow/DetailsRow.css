@@ -1,0 +1,13 @@
+.Details-row {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Details-row .bold-text {
+    font-size: x-large;
+}
+
+.Details-row.first-row {
+    padding-top: 1em;
+}
