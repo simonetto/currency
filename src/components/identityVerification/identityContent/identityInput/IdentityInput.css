@@ -1,0 +1,16 @@
+.Identity-input {
+    background-color: white;
+    height: 2em;
+    width: 2em;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    font-size: xx-large;
+}
+
+.Identity-input:focus {
+    outline: none;
+    border-color: rgb(100, 181, 246);
+}

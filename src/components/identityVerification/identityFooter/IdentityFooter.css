@@ -1,0 +1,11 @@
+.Identity-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(224, 224, 224);
+    padding: 1.5em 2em;
+}
+
+.Identity-footer button {
+    margin: 0 1.5em 0 0;
+}

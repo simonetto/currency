@@ -22,6 +22,13 @@ class WizardMenu extends React.Component {
     ]};
   }
 
+  getStepContent() {
+      if (this.state.steps[0].selected) {
+          return <StepContent />;
+      }
+      return null;
+  }
+
   render() {
     const steps = this.state.steps.map((step, index) => <WizardButton key={index}
                                                                       numberOfSteps={this.state.steps.length}
@@ -33,7 +40,7 @@ class WizardMenu extends React.Component {
         <div className="wizard-buttons">
           {steps}
         </div>
-        <StepContent />
+        {this.getStepContent()}
       </div>
     );
   }

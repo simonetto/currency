@@ -1,0 +1,23 @@
+.Identity-header {
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 1.5em 2em;
+}
+
+.Identity-header .identity-lock {
+    height: 2em;
+    opacity: 0.5;
+}
+
+.Identity-header .title {
+    color: rgb(175, 186, 194);
+    align-items: center;
+    display: flex;
+}
+
+.Identity-header .content {
+    width: 40em;
+}
+
+.Identity-header p {
+    width: 32em;
+}

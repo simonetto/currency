@@ -1,0 +1,21 @@
+.Button {
+    padding: 1em 1.5em;
+    border-radius: 3px;
+    outline:none;
+}
+
+.Button.ok {
+    border: 1px solid rgb(88, 154, 184);
+    background-color: rgb(110, 192, 230);
+    color: white;
+}
+
+.Button.cancel {
+    border: 1px solid rgb(224, 224, 224);
+    background-color: rgb(251, 253, 253);
+    color: rgb(175, 186, 194);
+}
+
+.Button.disabled {
+    opacity: 0.3;
+}
