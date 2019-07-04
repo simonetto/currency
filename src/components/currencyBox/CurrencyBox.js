@@ -9,7 +9,8 @@ class CurrencyBox extends React.Component {
     }
 
     getAmount() {
-        return `${Utils.getCurrencySymbol(this.props.currency)} ${Math.floor(this.props.amount)}`;
+        const value = Math.floor(this.props.amount);
+        return `${Utils.getCurrencySymbol(this.props.currency)} ${Utils.addCommas(value)}`;
     }
 
     getImage() {
@@ -20,17 +21,17 @@ class CurrencyBox extends React.Component {
         const classes = `Currency-box ${this.props.class}`;
         return (
             <div className={classes}>
-            <div className="left-content">
-            <span className="title">{this.props.label}</span>
-            <div>
-            <span className="amount">{this.getAmount()}</span>
-            <span className="decimals">{this.getDecimals()}</span>
-            </div>
-            </div>
-            <div className="right-content">
-            <img src={this.getImage()} className="currency-logo" alt={this.props.currency} />
-            <span>{this.props.currency.toUpperCase()}</span>
-            </div>
+                <div className="left-content">
+                    <span className="currency-title">{this.props.label}</span>
+                    <div className="currency">
+                        <span className="amount">{this.getAmount()}</span>
+                        <span>{this.getDecimals()}</span>
+                    </div>
+                </div>
+                <div className="right-content">
+                    <img src={this.getImage()} className="currency-logo" alt={this.props.currency} />
+                    <span>{this.props.currency.toUpperCase()}</span>
+                </div>
             </div>
         );
     }

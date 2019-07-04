@@ -14,9 +14,10 @@ class DetailsRow extends React.Component {
     }
 
     render() {
-        const boldText = this.props.detail.bold ? 'bold-text' : '';
+        const isBoldText = this.props.detail.bold ? 'bold-text' : '';
         const firstRow = this.props.isFirst ? 'first-row' : '';
         const classes = `Details-row transaction-detail ${firstRow}`;
+        const boldText = `bigger-text ${isBoldText}`;
 
         return (<div className={classes}>
             <span>{this.props.detail.legend}</span>

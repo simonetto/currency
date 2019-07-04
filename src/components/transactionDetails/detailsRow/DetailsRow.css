@@ -2,10 +2,16 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: rgb(158, 158, 158);
+}
+
+.Details-row .bigger-text {
+    font-family: Medium;
 }
 
 .Details-row .bold-text {
-    font-size: x-large;
+    color: rgb(97, 97, 97);
 }
 
 .Details-row.first-row {

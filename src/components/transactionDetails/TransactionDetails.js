@@ -58,10 +58,10 @@ class TransactionDetails extends React.Component {
                 <DetailsRow detail={this.state.transaction.send} isFirst={true} />
                 <div className="title border-top transaction-detail">
                     <span>Receiving Details</span>
-                <div>
-                    <a href="none;">As of right now</a>
-                    <div className="question-mark">?</div>
-                </div>
+                    <div className="link">
+                        <a href="none;">As of right now</a>
+                        <div className="question-mark">?</div>
+                    </div>
                 </div>
                 {receiveDetails}
                 <div className="border-top bottom transaction-detail">

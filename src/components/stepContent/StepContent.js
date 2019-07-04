@@ -55,8 +55,8 @@ class StepContent extends React.Component {
             return (
                 <div className="Step-content">
                     {this.renderModal()}
-                    <p>Let's set up your transaction!</p>
-                    <p>Specify the amount to be sent or received</p>
+                    <p className="title">Let's set up your transaction!</p>
+                    <p className="subtitle">Specify the amount to be sent or received</p>
                     {content}
                     <div className="next-button">
                         <Button label="Next" type="ok" handler={this.handleNext} />

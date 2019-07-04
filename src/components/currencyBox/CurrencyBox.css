@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em;
+    padding: 1em 1.5em;
 }
 
 .Currency-box.top-box {
@@ -18,25 +18,32 @@
     border-radius: 0 0 5px 5px;
 }
 
-.Currency-box.top-box .left-content .title {
+.Currency-box .left-content .currency-title {
+    font-size: small;
+    font-family: Medium;
+}
+
+.Currency-box.top-box .left-content .currency-title {
     color: rgb(110, 192, 230);
 }
 
-.Currency-box.bottom-box .left-content .title {
+.Currency-box.bottom-box .left-content .currency-title {
     color: rgb(170, 170, 170);
 }
 
 .Currency-box .right-content {
     border: 1px solid rgb(224, 224, 224);
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
     align-items: center;
-    border-radius: 2em 0 0 2em;
+    border-radius: 2em 5px 5px 2em;
+    font-family: Bold;
+    color: rgb(97, 97, 97);
 }
 
 .Currency-box .currency-logo {
-    height: 1.5em;
-    margin-right: 1em;
+    height: 1em;
+    margin-right: 0.5em;
 }
 
 .Currency-box.bottom-box .right-content {
@@ -47,10 +54,11 @@
     background-color: rgb(255, 255, 255);
 }
 
-.Currency-box .amount {
-    font-size: large;
+.Currency-box .currency {
+    margin-top: 0.5em;
+    font-family: Medium;
 }
 
-.Currency-box .decimals {
-    font-size: small;
+.Currency-box .amount {
+    font-size: x-large;
 }

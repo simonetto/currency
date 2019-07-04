@@ -1,6 +1,9 @@
 .Transaction-details {
     border: 1px solid rgb(224, 224, 224);
     border-radius: 5px;
+    font-size: small;
+    position: fixed;
+    width: 20em;
 }
 
 .Transaction-details .title{
@@ -19,7 +22,10 @@
     justify-content: center;
     color: rgb(255, 200, 103);
     background-color: white;
-    padding: 1em 0;
+    font-size: x-small;
+    font-family: Medium;
+    padding: 1.5em 0;
+    border-radius: 0 0 5px 5px;
 }
 
 .Transaction-details .title div {
@@ -27,12 +33,16 @@
     align-items: center;
 }
 
+.Transaction-details .link {
+    font-size: xx-small;
+}
+
 .Transaction-details .question-mark {
     color: white;
     background-color: rgb(110, 192, 230);
-    font-size: x-small;
-    width: 12px;
-    height: 12px;
+    font-size: xx-small;
+    width: 11px;
+    height: 11px;
     justify-content: center;
     border-radius: 60px;
     align-items: center;

@@ -1,0 +1,79 @@
+@font-face {
+font-family: "Bold";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Bold.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-Bold.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Bold.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "BoldItalic";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-BoldItalic.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-BoldItalic.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BoldItalic.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "Book";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Book.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-Book.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Book.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "BookItalic";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-BookItalic.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-BookItalic.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-BookItalic.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "Light";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Light.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-Light.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Light.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "LightItalic";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-LightItalic.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-LightItalic.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-LightItalic.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "Medium";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-Medium.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-Medium.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-Medium.svg#filename") format("svg");
+}
+
+@font-face {
+font-family: "MediumItalic";
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.eot");
+src: url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.woff") format("woff"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.woff2') format('woff2'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-OTF-MAC/PostGrotesk-MediumItalic.otf") format("opentype"),
+     url('./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-TTF-WINDOWS/PostGrotesk-MediumItalic.ttf') format('truetype'),
+     url("./assets/fonts/post-grotesk/PostGrotesk-AllStyles-v1.010-WEBFONTS/PostGrotesk-MediumItalic.svg#filename") format("svg");
+}
