@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <AppHeader />
+      <div className="grey-bg"></div>
       <div className="centered-row page-main">
-        <div className="grey-bg"></div>
         <div className="page-width">
           <LeftPanel />
           <RightPanel />

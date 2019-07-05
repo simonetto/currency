@@ -22,7 +22,7 @@
 
 .grey-bg {
   background-color: rgb(251, 251, 251);
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
