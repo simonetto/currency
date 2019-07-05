@@ -4,7 +4,7 @@ import './Modal.css';
 class Modal extends React.Component {
     render() {
         return (<section className="Modal fade-in">
-            <div className="content">
+            <div className="modal-content">
                 {this.props.content}
             </div>
         </section>);

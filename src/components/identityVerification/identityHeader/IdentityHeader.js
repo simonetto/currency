@@ -1,13 +1,14 @@
 import React from 'react';
-import lock from '../../../assets/images/lock.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
 import './IdentityHeader.css';
 
 class IdentityHeader extends React.Component {
     render() {
         return (
             <div className="Identity-header">
-                <div className="title">
-                    <img src={lock} className="identity-lock" alt="lock" />
+                <div className="identity-title">
+                    <FontAwesomeIcon icon={faLock} />
                     <span>Identity verification required</span>
                 </div>
                 <div className="content">

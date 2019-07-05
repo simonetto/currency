@@ -8,4 +8,11 @@
 
 .Identity-footer button {
     margin: 0 1.5em 0 0;
+    font-size: small;
+    padding: 0.75em 1.25em;
+}
+
+.Identity-footer a {
+    font-size: x-small;
+    font-family: Medium;
 }

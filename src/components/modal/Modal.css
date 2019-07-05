@@ -30,7 +30,7 @@
     animation-name: fadeIn;
 }
 
-.Modal .content {
+.Modal .modal-content {
     background-color: white;
     border-radius: 5px;
 }

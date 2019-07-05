@@ -1,21 +1,26 @@
 .Identity-header {
     border-bottom: 1px solid rgb(224, 224, 224);
-    padding: 1.5em 2em;
+    padding: 1.5em 2em 0.5em 2em;
 }
 
-.Identity-header .identity-lock {
-    height: 2em;
-    opacity: 0.5;
-}
-
-.Identity-header .title {
+.Identity-header svg {
+    font-size: large;
     color: rgb(175, 186, 194);
+    margin-right: 0.75em;
+}
+
+.Identity-header .identity-title {
+    color: rgb(118, 136, 149);
     align-items: center;
     display: flex;
+    align-items: baseline;
+    font-family: Medium;
 }
 
 .Identity-header .content {
-    width: 40em;
+    width: 39em;
+    color: rgb(131, 131, 131);
+    font-size: small;
 }
 
 .Identity-header p {

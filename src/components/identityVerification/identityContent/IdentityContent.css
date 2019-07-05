@@ -3,14 +3,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em 0;
+    padding: 3em 0;
 }
 
 .Identity-content .phone-number {
     display: flex;
     justify-content: center;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
     align-items: center;
+    font-family: Medium;
+    font-size: smaller;
+}
+
+.Identity-content .number {
+    color: rgb(153, 153, 153);
 }
 
 .Identity-content .country-code {
@@ -36,6 +42,15 @@
     margin-top: 1.5em;
     display: flex;
     justify-content: space-between;
+    font-size: x-small;
+    align-items: center;
+    color: rgb(131, 131, 131);
+}
+
+.Identity-content .links svg {
+    color: rgb(100, 181, 246);
+    margin-right: 0.5em;
+    font-size: x-small;
 }
 
 .Identity-content .content-width {
@@ -44,5 +59,5 @@
 }
 
 .Identity-content .Identity-input:not(:first-child) {
-    margin-left: 0.5em;
+    margin-left: 0.25em;
 }

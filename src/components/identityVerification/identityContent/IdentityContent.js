@@ -1,5 +1,8 @@
 import React from 'react';
 import IdentityInput from './identityInput';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import './IdentityContent.css';
 
 class IdentityContent extends React.Component {
@@ -23,17 +26,19 @@ class IdentityContent extends React.Component {
                 <div className="content-width">
                     <div className="phone-number">
                         <span>Enter the code sent via SMS to</span>
-                        <div className="country-code">+{this.state.phone.country}</div>
-                        <div className="phone">{this.state.phone.number}</div>
+                        <div className="number country-code">+{this.state.phone.country}</div>
+                        <div className="number phone">{this.state.phone.number}</div>
                     </div>
                     <div className="validation-inputs">
                         {inputs}
                     </div>
                     <div className="links">
                         <div>
+                            <FontAwesomeIcon icon={faRedoAlt} />
                             <span>Receive a new code</span>
                         </div>
                         <div>
+                            <FontAwesomeIcon icon={faPhoneAlt} />
                             <span>Receive code via call instead</span>
                         </div>
                     </div>
