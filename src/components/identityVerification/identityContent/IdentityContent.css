@@ -47,6 +47,10 @@
     color: rgb(131, 131, 131);
 }
 
+.Identity-content .links div {
+    cursor: pointer;
+}
+
 .Identity-content .links svg {
     color: rgb(100, 181, 246);
     margin-right: 0.5em;
