@@ -2,7 +2,7 @@ import React from 'react';
 import AppHeader from '../appHeader';
 import LeftPanel from '../leftPanel';
 import RightPanel from '../rightPanel';
-import './App.css';
+import './App.scss';
 
 
 function App() {

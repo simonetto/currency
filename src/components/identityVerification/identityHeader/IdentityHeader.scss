@@ -1,0 +1,30 @@
+@import "../../../colors";
+
+.Identity-header {
+    border-bottom: 1px solid $border;
+    padding: 1.5em 2em 0.5em 2em;
+
+    svg {
+        font-size: large;
+        color: map-get($identity-box, icon);
+        margin-right: 0.75em;
+    }
+
+    .identity-title {
+        color: map-get($identity-box, title);
+        align-items: center;
+        display: flex;
+        align-items: baseline;
+        font-family: Medium;
+    }
+
+    .content {
+        width: 39em;
+        color: $grey-text;
+        font-size: small;
+    }
+
+    p {
+        width: 32em;
+    }
+}

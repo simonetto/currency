@@ -1,0 +1,24 @@
+@import "../../colors";
+
+.Button {
+    padding: 1em;
+    border-radius: 3px;
+    outline:none;
+
+}
+
+.Button.ok {
+    border: 1px solid map-get($buton-ok, border);
+    background-color: map-get($buton-ok, background);
+    color: map-get($buton-ok, text);
+}
+
+.Button.cancel {
+    border: 1px solid map-get($buton-cancel, border);
+    background-color: map-get($buton-cancel, background);
+    color: map-get($buton-cancel, text);
+}
+
+.Button.disabled {
+    opacity: 0.3;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import TransactionDetails from '../transactionDetails';
-import './RightPanel.css';
+import './RightPanel.scss';
 
 function RightPanel() {
     return (

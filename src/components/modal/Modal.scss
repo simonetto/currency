@@ -1,3 +1,5 @@
+@import "../../colors";
+
 .Modal {
     display: flex;
     justify-content: center;
@@ -11,8 +13,12 @@
     animation-duration: 0.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: $dark-background;
 
+    .modal-content {
+        background-color: white;
+        border-radius: 5px;
+    }
 }
 
 @-webkit-keyframes fadeIn {
@@ -28,9 +34,4 @@
 .Modal.fade-in {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-}
-
-.Modal .modal-content {
-    background-color: white;
-    border-radius: 5px;
 }

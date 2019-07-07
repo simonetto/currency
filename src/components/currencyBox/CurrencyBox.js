@@ -1,6 +1,6 @@
 import React from 'react';
 import Utils from '../../utils';
-import './CurrencyBox.css';
+import './CurrencyBox.scss';
 
 class CurrencyBox extends React.Component {
     getDecimals() {

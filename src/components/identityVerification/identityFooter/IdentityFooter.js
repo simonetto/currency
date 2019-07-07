@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../button';
-import './IdentityFooter.css';
+import './IdentityFooter.scss';
 
 class IdentityFooter extends React.Component {
     render() {

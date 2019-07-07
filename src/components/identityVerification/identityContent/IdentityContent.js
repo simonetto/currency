@@ -3,7 +3,7 @@ import IdentityInput from './identityInput';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
-import './IdentityContent.css';
+import './IdentityContent.scss';
 
 class IdentityContent extends React.Component {
     constructor(props) {

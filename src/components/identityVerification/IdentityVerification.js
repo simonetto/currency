@@ -2,7 +2,7 @@ import React from 'react';
 import IdentityHeader from './identityHeader';
 import IdentityContent from './identityContent';
 import IdentityFooter from './identityFooter';
-import './IdentityVerification.css';
+import './IdentityVerification.scss';
 
 class IdentityVerification extends React.Component {
     constructor(props) {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Utils from '../../utils';
 import DetailsRow from './detailsRow';
-import './TransactionDetails.css';
+import './TransactionDetails.scss';
 
 class TransactionDetails extends React.Component {
     constructor(props) {

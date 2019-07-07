@@ -1,7 +1,7 @@
 import React from 'react';
 import WizardMenu from '../wizardMenu';
 import AppFooter from '../appFooter';
-import './LeftPanel.css';
+import './LeftPanel.scss';
 
 function LeftPanel() {
   return (

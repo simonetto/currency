@@ -1,0 +1,9 @@
+.Wizard-menu {
+    display: flex;
+    flex-direction: column;
+
+    .wizard-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+}

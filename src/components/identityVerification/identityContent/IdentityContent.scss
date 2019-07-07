@@ -1,0 +1,69 @@
+@import "../../../colors";
+
+.Identity-content {
+    background-color: $grey-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+
+    .phone-number {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+        align-items: center;
+        font-family: Medium;
+        font-size: smaller;
+    }
+
+    .number {
+        color: rgb(153, 153, 153);
+    }
+
+    .country-code {
+        border: 1px solid $border;
+        background-color: map-get($phone-box, country-code);
+        margin-left: 0.5em;
+        padding: 0.5em;
+    }
+
+    .phone {
+        border: 1px solid $border;
+        border-left: 0px;
+        background-color: map-get($phone-box, number);
+        padding: 0.5em;
+    }
+
+    .validation-inputs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .links {
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        font-size: x-small;
+        align-items: center;
+        color: $grey-text;
+    }
+
+    .links div {
+        cursor: pointer;
+    }
+
+    .links svg {
+        color: $links;
+        margin-right: 0.5em;
+        font-size: x-small;
+    }
+
+    .content-width {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Identity-input:not(:first-child) {
+        margin-left: 0.25em;
+    }
+}

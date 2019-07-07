@@ -1,6 +1,6 @@
 import React from 'react';
 import Utils from '../../../utils';
-import './DetailsRow.css';
+import './DetailsRow.scss';
 
 class DetailsRow extends React.Component {
     getValue() {

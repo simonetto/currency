@@ -1,9 +1,11 @@
+@import "../../../../colors";
+
 .Identity-input {
     background-color: white;
     height: 1.5em;
     width: 1.5em;
     border-radius: 5px;
-    border: 1px solid rgb(224, 224, 224);
+    border: 1px solid $border;
     text-align: center;
     color: transparent;
     text-shadow: 0 0 0 gray;
@@ -12,5 +14,5 @@
 
 .Identity-input:focus {
     outline: none;
-    border-color: rgb(100, 181, 246);
+    border-color: $links;
 }

@@ -1,17 +1,19 @@
+@import "../../../colors";
+
 .Details-row {
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(158, 158, 158);
-}
+    color: $details-grey;
 
-.Details-row .bigger-text {
-    font-family: Medium;
-}
+    .bigger-text {
+        font-family: Medium;
+    }
 
-.Details-row .bold-text {
-    color: rgb(97, 97, 97);
+    .bold-text {
+        color: $dark-grey;
+    }
 }
 
 .Details-row.first-row {

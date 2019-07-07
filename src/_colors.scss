@@ -1,0 +1,47 @@
+$links: rgb(100, 181, 246);
+$grey-background: rgb(251, 251, 251);
+$border: rgb(224, 224, 224);
+$footer-text: rgb(196, 196, 196);
+$header-background: rgb(50, 50, 60);
+$light-blue: rgb(110, 192, 230);
+$dark-grey: rgb(97, 97, 97);
+$details-grey: rgb(158, 158, 158);
+$grey-text: rgb(131, 131, 131);
+$dark-background: rgba(0, 0, 0, 0.75);
+$orange-text: rgb(255, 200, 103);
+
+$buton-ok: (
+    text: white,
+    background: $light-blue,
+    border: rgb(88, 154, 184)
+);
+
+$buton-cancel: (
+    text: $grey-text,
+    background: rgb(251, 253, 253),
+    border: rgb(224, 224, 224)
+);
+
+$currency-box-top: (
+    background: rgb(250, 253, 254)
+);
+
+$currency-box-bottom: (
+    text: rgb(170, 170, 170),
+    background: rgb(250, 250, 250)
+);
+
+$phone-box: (
+    country-code: rgb(242, 241, 241),
+    number: rgb(247, 247, 247)
+);
+
+$identity-box: (
+    title: rgb(118, 136, 149),
+    icon: rgb(175, 186, 194)
+);
+
+$unselected-wizard-buton: (
+    text: rgb(177, 191, 198),
+    progress: rgb(226, 242, 250)
+);

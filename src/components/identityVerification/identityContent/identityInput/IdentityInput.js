@@ -1,5 +1,5 @@
 import React from 'react';
-import './IdentityInput.css';
+import './IdentityInput.scss';
 
 class IdentityInput extends React.Component {
     onChangeHandler(e) {

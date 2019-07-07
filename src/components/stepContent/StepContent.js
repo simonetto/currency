@@ -3,7 +3,7 @@ import Modal from '../modal';
 import CurrencyBox from '../currencyBox';
 import Button from '../button';
 import IdentityVerification from '../identityVerification';
-import './StepContent.css';
+import './StepContent.scss';
 
 class StepContent extends React.Component {
     constructor(props) {

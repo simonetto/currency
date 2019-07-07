@@ -1,7 +1,7 @@
 import React from 'react';
 import StepContent from '../stepContent';
 import WizardButton from './wizardButton';
-import './WizardMenu.css';
+import './WizardMenu.scss';
 
 class WizardMenu extends React.Component {
   constructor(props) {

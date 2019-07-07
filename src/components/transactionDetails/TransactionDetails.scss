@@ -1,0 +1,56 @@
+@import "../../colors";
+
+.Transaction-details {
+    border: 1px solid $border;
+    border-radius: 5px;
+    font-size: small;
+    position: fixed;
+    width: 20em;
+
+    .title{
+        border-bottom: 1px solid $border;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1em;
+    }
+
+    .border-top {
+        border-top: 1px solid $border;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        color: $orange-text;
+        background-color: white;
+        font-size: x-small;
+        font-family: Medium;
+        padding: 1.5em 0;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .title div {
+        display: flex;
+        align-items: center;
+    }
+
+    .link {
+        font-size: xx-small;
+    }
+
+    .question-mark {
+        color: white;
+        background-color: $light-blue;
+        font-size: xx-small;
+        width: 11px;
+        height: 11px;
+        justify-content: center;
+        border-radius: 60px;
+        align-items: center;
+        margin-left: 0.5em;
+    }
+}
+
+.transaction-detail {
+    padding: 0 1em 1em 1em;
+}

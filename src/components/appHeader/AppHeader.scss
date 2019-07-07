@@ -1,0 +1,10 @@
+@import "../../colors";
+
+.App-header {
+  background-color: $header-background;
+  z-index: 1;
+  
+  .App-logo {
+      height: 3.5em;
+  }
+}

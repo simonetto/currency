@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/images/CF_logo_RGB_NEG.svg';
-import './AppHeader.css';
+import './AppHeader.scss';
 
 function AppHeader() {
   return (

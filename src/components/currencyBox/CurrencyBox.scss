@@ -1,0 +1,66 @@
+@import "../../colors";
+
+.Currency-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+
+    .left-content .currency-title {
+        font-size: small;
+        font-family: Medium;
+    }
+
+    .right-content {
+        border: 1px solid $border;
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        border-radius: 2em 5px 5px 2em;
+        font-family: Bold;
+        color: $dark-grey;
+    }
+
+    .currency-logo {
+        height: 1em;
+        margin-right: 0.5em;
+    }
+
+    .currency {
+        margin-top: 0.5em;
+        font-family: Medium;
+    }
+
+    .amount {
+        font-size: x-large;
+    }
+}
+
+.Currency-box.top-box {
+    border: 1px solid $light-blue;
+    border-radius: 5px 5px 0 0;
+    background-color: map-get($currency-box-top, background);
+
+    .right-content {
+        background-color: white;
+    }
+
+    .left-content .currency-title {
+        color: $light-blue;
+    }
+}
+
+.Currency-box.bottom-box {
+    border-left: 1px solid $border;
+    border-bottom: 1px solid $border;
+    border-right: 1px solid $border;
+    border-radius: 0 0 5px 5px;
+
+    .right-content {
+        background-color: map-get($currency-box-bottom, background);
+    }
+
+    .left-content .currency-title {
+        color: map-get($currency-box-bottom, text);
+    }
+}

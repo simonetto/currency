@@ -1,5 +1,5 @@
 import React from 'react';
-import './WizardButton.css';
+import './WizardButton.scss';
 
 class WizardButton extends React.Component {
     getProgressClasses() {
