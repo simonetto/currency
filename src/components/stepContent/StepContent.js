@@ -1,11 +1,16 @@
 import React from 'react';
+import { connect } from "react-redux";
 import Modal from '../modal';
 import CurrencyBox from '../currencyBox';
 import Button from '../button';
 import IdentityVerification from '../identityVerification';
 import './StepContent.scss';
 
-class StepContent extends React.Component {
+const mapStateToProps = state => {
+    return { transaction: state.details.transaction };
+};
+
+class ConnectedStepContent extends React.Component {
     constructor(props) {
         super(props);
 
@@ -13,21 +18,7 @@ class StepContent extends React.Component {
         this.hideModal = this.hideModal.bind(this);
 
         this.state = {
-            showModal: false,
-            transaction: [
-                {
-                    amount : 2000,
-                    currency : 'eur',
-                    label : 'YOU SEND',
-                    class : 'top-box'
-                },
-                {
-                    amount : 1717.94,
-                    currency : 'gbp',
-                    label : 'RECEIVER GETS',
-                    class : 'bottom-box'
-                }
-            ]
+            showModal: false
         };
     }
 
@@ -46,24 +37,24 @@ class StepContent extends React.Component {
     }
 
     render() {
-        const content = this.state.transaction.map((part, index) => <CurrencyBox class={part.class}
-            key={index}
-            currency={part.currency}
-            amount={part.amount}
-            label={part.label}/>);
+        const send = this.props.transaction.send;
+        const receive = this.props.transaction.receive;
 
-            return (
-                <div className="Step-content">
-                    {this.renderModal()}
-                    <p className="title">Let's set up your transaction!</p>
-                    <p className="subtitle">Specify the amount to be sent or received</p>
-                    {content}
-                    <div className="next-button">
-                        <Button label="Next" type="ok" handler={this.handleNext} />
-                    </div>
+        return (
+            <div className="Step-content">
+                {this.renderModal()}
+                <p className="title">Let's set up your transaction!</p>
+                <p className="subtitle">Specify the amount to be sent or received</p>
+                <CurrencyBox class='top-box' currency={send.currency} amount={send.value} label={send.legend}/>
+                <CurrencyBox class='bottom-box' currency={receive.currency} amount={receive.value} label={receive.legend}/>
+                <div className="next-button">
+                    <Button label="Next" type="ok" handler={this.handleNext} />
                 </div>
-            );
-        }
+            </div>
+        );
     }
+}
 
-    export default StepContent;
+const StepContent = connect(mapStateToProps)(ConnectedStepContent);
+
+export default StepContent;

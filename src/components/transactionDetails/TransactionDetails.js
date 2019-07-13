@@ -1,66 +1,34 @@
 import React from 'react';
+import { connect } from "react-redux";
 import Utils from '../../utils';
 import DetailsRow from './detailsRow';
 import './TransactionDetails.scss';
 
-class TransactionDetails extends React.Component {
-    constructor(props) {
-        super(props);
+const mapStateToProps = state => {
+    return { transaction: state.details.transaction };
+};
 
-        this.state = {
-            transaction: {
-                saved : {
-                    value : 66.19,
-                    currency : 'gbp'
-                },
-                send : {
-                    legend : 'You send',
-                    currency : 'eur',
-                    value : 2000,
-                    bold : true
-                },
-                receive : [
-                    {
-                        legend : 'Rate',
-                        value : 0.86022,
-                    },
-                    {
-                        legend : 'Fee',
-                        value : 2.5,
-                        currency : 'gbp'
-                    },
-                    {
-                        legend : 'Delivery date',
-                        value : '25th November'
-                    },
-                    {
-                        legend : 'Recipient gets',
-                        value : 1717.94,
-                        currency : 'gbp',
-                        bold : true
-                    }
-                ]
-            }
-        };
-    }
-
+class ConnectedTransactionDetails extends React.Component {
     getSavedAmount() {
-        return `${Utils.getCurrencySymbol(this.state.transaction.saved.currency)}${Utils.getTwoDecimals(this.state.transaction.saved.value)}`;
+        if (this.props.transaction.saved.value === undefined) {
+            return '';
+        }
+        return `${Utils.getCurrencySymbol(this.props.transaction.saved.currency)}${Utils.getTwoDecimals(this.props.transaction.saved.value)}`;
     }
 
     render() {
-        const receiveDetails = this.state.transaction.receive.map((detail, index) => <DetailsRow detail={detail} key={index} isFirst={index===0} />);
+        const receiveDetails = this.props.transaction.receiveDetails.map((detail, index) =>
+                                <DetailsRow detail={detail} key={index} isFirst={index===0} />);
         return (
             <div className="Transaction-details">
                 <div className="title transaction-detail">
                     <span>Sending Details</span>
                 </div>
-                <DetailsRow detail={this.state.transaction.send} isFirst={true} />
+                <DetailsRow detail={this.props.transaction.send} isFirst={true} />
                 <div className="title border-top transaction-detail">
                     <span>Receiving Details</span>
                     <div className="link">
-                        <a href="none;">As of right now</a>
-                        <div className="question-mark">?</div>
+                        <a href="none;">As of right now <div className="question-mark">?</div></a>
                     </div>
                 </div>
                 {receiveDetails}
@@ -71,5 +39,7 @@ class TransactionDetails extends React.Component {
         );
     }
 }
+
+const TransactionDetails = connect(mapStateToProps)(ConnectedTransactionDetails);
 
 export default TransactionDetails;

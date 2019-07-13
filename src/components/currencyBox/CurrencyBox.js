@@ -3,18 +3,18 @@ import Utils from '../../utils';
 import './CurrencyBox.scss';
 
 class CurrencyBox extends React.Component {
-    getDecimals() {
-        const decimals = (Math.round(this.props.amount * 100) / 100).toFixed(2);
-        return `.${decimals.toString().split('.')[1]}`;
-    }
-
     getAmount() {
+        if (this.props.amount === undefined) {
+            return '';
+        }
         const value = Math.floor(this.props.amount);
         return `${Utils.getCurrencySymbol(this.props.currency)} ${Utils.addCommas(value)}`;
     }
 
     getImage() {
-        return require(`../../assets/images/${this.props.currency}.png`);
+        if (this.props.currency) {
+            return require(`../../assets/images/${this.props.currency}.png`);
+        }
     }
 
     render() {
@@ -22,15 +22,15 @@ class CurrencyBox extends React.Component {
         return (
             <div className={classes}>
                 <div className="left-content">
-                    <span className="currency-title">{this.props.label}</span>
+                    <span className="currency-title">{Utils.toUpperCase(this.props.label)}</span>
                     <div className="currency">
                         <span className="amount">{this.getAmount()}</span>
-                        <span>{this.getDecimals()}</span>
+                        <span>{Utils.getDecimalPart(this.props.amount)}</span>
                     </div>
                 </div>
                 <div className="right-content">
                     <img src={this.getImage()} className="currency-logo" alt={this.props.currency} />
-                    <span>{this.props.currency.toUpperCase()}</span>
+                    <span>{Utils.toUpperCase(this.props.currency)}</span>
                 </div>
             </div>
         );

@@ -9,11 +9,24 @@ class Utils {
     }
 
     getTwoDecimals(value) {
-        return value;
+        return parseFloat(Math.round(value * 100) / 100).toFixed(2);
+    }
+
+    getDecimalPart(value) {
+        if (value === undefined) {
+            return '';
+        }
+
+        const decimals = this.getTwoDecimals(value);
+        return `.${decimals.toString().split('.')[1]}`;
     }
 
     addCommas(value) {
         return value.toLocaleString(navigator.language, { minimumFractionDigits: 0 });
+    }
+
+    toUpperCase(value) {
+        return value ? value.toUpperCase() : '';
     }
 }
 

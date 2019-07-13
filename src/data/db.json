@@ -1,0 +1,39 @@
+transaction: {
+    saved : {
+        value : 66.19,
+        currency : "gbp"
+    },
+    send : {
+        legend : "You send",
+        currency : "eur",
+        value : 2000,
+        isTotal : true
+    },
+    receive : {
+        legend : "RECEIVER GETS",
+        currency : "gbp",
+        value : 1717.94,
+        isTotal : true
+    },
+    receiveDetails : [
+        {
+            legend : "Rate",
+            value : 0.86022,
+        },
+        {
+            legend : "Fee",
+            value : 2.5,
+            currency : "gbp"
+        },
+        {
+            legend : "Delivery date",
+            value : "25th November"
+        },
+        {
+            legend : "Recipient gets",
+            value : 1717.94,
+            currency : "gbp",
+            isTotal : true
+        }
+    ]
+}

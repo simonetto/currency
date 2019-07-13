@@ -1,3 +1,2 @@
-#implement conditional classes with https://cssinjs.org/?v=v10.0.0-alpha.21
+#bring details from the be
 #Tests
-#Add sass
