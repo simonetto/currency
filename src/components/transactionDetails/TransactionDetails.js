@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from "react-redux";
 import Utils from '../../utils';
 import DetailsRow from './detailsRow';
+import { getData } from "../../actions/Transaction";
 import './TransactionDetails.scss';
 
 const mapStateToProps = state => {
@@ -9,6 +10,11 @@ const mapStateToProps = state => {
 };
 
 class ConnectedTransactionDetails extends React.Component {
+    componentDidMount() {
+        // calling the new action creator
+        this.props.getData();
+    }
+
     getSavedAmount() {
         if (this.props.transaction.saved.value === undefined) {
             return '';
@@ -40,6 +46,6 @@ class ConnectedTransactionDetails extends React.Component {
     }
 }
 
-const TransactionDetails = connect(mapStateToProps)(ConnectedTransactionDetails);
+const TransactionDetails = connect(mapStateToProps, {getData})(ConnectedTransactionDetails);
 
 export default TransactionDetails;
