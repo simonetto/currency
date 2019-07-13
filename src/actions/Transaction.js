@@ -1,14 +1,12 @@
-import { GET_DETAILS } from '../constants/ActionTypes';
 import { DETAILS_LOADED } from '../constants/ActionTypes';
-
-export function getDetails(payload) {
-  return { type: GET_DETAILS, payload };
-}
+import { TRANSACTION_DETAILS } from '../constants/Endpoints';
 
 export function getData() {
-  return fetch('https://my-json-server.typicode.com/simonetto/currency/transaction')
-    .then(response => response.json())
-    .then(json => {
-      return { type: "DATA_LOADED", payload: json };
-    });
+  return function(dispatch) {
+    return fetch(TRANSACTION_DETAILS)
+      .then(response => response.json())
+      .then(json => {
+        dispatch({ type: DETAILS_LOADED, payload: json });
+      });
+  };
 }

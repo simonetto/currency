@@ -11,7 +11,6 @@ const mapStateToProps = state => {
 
 class ConnectedTransactionDetails extends React.Component {
     componentDidMount() {
-        // calling the new action creator
         this.props.getData();
     }
 
@@ -46,6 +45,6 @@ class ConnectedTransactionDetails extends React.Component {
     }
 }
 
-const TransactionDetails = connect(mapStateToProps, {getData})(ConnectedTransactionDetails);
+const TransactionDetails = connect(mapStateToProps, { getData })(ConnectedTransactionDetails);
 
 export default TransactionDetails;

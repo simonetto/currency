@@ -1,4 +1,4 @@
-import { GET_DETAILS } from "../constants/ActionTypes";
+import { DETAILS_LOADED } from '../constants/ActionTypes';
 
 const initialState = {
     transaction: {
@@ -10,9 +10,12 @@ const initialState = {
 };
 
 function details(state = initialState, action) {
-    if (action.type === GET_DETAILS) {
-        console.log('TODO: code to get details')
+    if (action.type === DETAILS_LOADED) {
+        return Object.assign({}, state, {
+            transaction: action.payload
+        });
     }
+
     return state;
 }
 

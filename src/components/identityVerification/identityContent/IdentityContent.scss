@@ -32,6 +32,7 @@
         border-left: 0px;
         background-color: map-get($phone-box, number);
         padding: 0.5em;
+        min-height: 1.3em;
     }
 
     .validation-inputs {

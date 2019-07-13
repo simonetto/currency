@@ -1,22 +1,42 @@
 import React from 'react';
+import { connect } from "react-redux";
 import IdentityInput from './identityInput';
+import { getData } from "../../../actions/Identification";
+import { sendVerificationNumber } from "../../../actions/Identification";
+import { callVerificationNumber } from "../../../actions/Identification";
+import { enableVerification } from "../../../actions/Identification";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import './IdentityContent.scss';
 
-class IdentityContent extends React.Component {
+const mapStateToProps = state => {
+    return { phone: state.identification.phone,
+             verificationNumber: state.identification.verificationNumber };
+};
+
+function mapDispatchToProps(dispatch) {
+    return {
+        getData: () => dispatch(getData()),
+        sendVerificationNumber: () => dispatch(sendVerificationNumber()),
+        callVerificationNumber: () => dispatch(callVerificationNumber()),
+        enableVerification: numbers => dispatch(enableVerification(numbers))
+    };
+}
+
+class ConnectedIdentityContent extends React.Component {
+    componentDidMount() {
+        this.props.getData();
+        this.props.sendVerificationNumber();
+    }
+
     constructor(props) {
         super(props);
 
         this.state = {
-            phone : {
-                country : 353,
-                number : 872251177
-            },
-            focusIndex : 0
+            focusIndex : 0,
+            numbers : this.props.verificationNumber
         };
-        this.state.numbers = ['', '', '', '', '', ''];
     }
 
     isFocused(index) {
@@ -37,14 +57,15 @@ class IdentityContent extends React.Component {
             }
         }
 
-        this.props.onVerificationChange(this.state.numbers.indexOf('') >= 0);
+        this.props.enableVerification(this.state.numbers);
     }
 
-    newCodeHandler() {
+    newCodeHandler(sendNumberFunction) {
         this.setState({numbers : ['', '', '', '', '', ''],
                        focusIndex : 0
                       });
-        this.props.onVerificationChange(true);
+        sendNumberFunction();
+        this.props.enableVerification(this.state.numbers);
     }
 
     render() {
@@ -60,18 +81,18 @@ class IdentityContent extends React.Component {
                 <div className="content-width">
                     <div className="phone-number">
                         <span>Enter the code sent via SMS to</span>
-                        <div className="number country-code">+{this.state.phone.country}</div>
-                        <div className="number phone">{this.state.phone.number}</div>
+                        <div className="number country-code">+{this.props.phone.country}</div>
+                        <div className="number phone">{this.props.phone.number}</div>
                     </div>
                     <div className="validation-inputs">
                         {inputs}
                     </div>
                     <div className="links">
-                        <div onClick={this.newCodeHandler.bind(this)}>
+                        <div onClick={this.newCodeHandler.bind(this, this.props.sendVerificationNumber)}>
                             <FontAwesomeIcon icon={faRedoAlt} />
                             <span>Receive a new code</span>
                         </div>
-                        <div>
+                        <div onClick={this.newCodeHandler.bind(this, this.props.callVerificationNumber)}>
                             <FontAwesomeIcon icon={faPhoneAlt} />
                             <span>Receive code via call instead</span>
                         </div>
@@ -80,5 +101,7 @@ class IdentityContent extends React.Component {
             </div>);
     }
 };
+
+const IdentityContent = connect(mapStateToProps, mapDispatchToProps)(ConnectedIdentityContent);
 
 export default IdentityContent;
