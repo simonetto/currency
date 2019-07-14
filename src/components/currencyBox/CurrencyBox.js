@@ -2,7 +2,16 @@ import React from 'react';
 import Utils from '../../utils';
 import './CurrencyBox.scss';
 
+/**
+Box from the left column containing a transaction detail
+Parameters:
+    amount: Amount to be transferred
+    currency: (eur, gbp) Short notation for the currency name
+    label: Box title
+    class: (top-box, bottom-box) Styles depending on the box position
+**/
 class CurrencyBox extends React.Component {
+    //Given an amout, returns the whole part plus the currency symbol. Ie: 4564,43 => £ 4,564
     getAmount() {
         if (this.props.amount === undefined) {
             return '';

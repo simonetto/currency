@@ -8,6 +8,11 @@ const mapStateToProps = state => {
     return { steps: state.wizzard.steps };
 };
 
+/**
+Wizard menue
+Properties:
+    steps: object containing the wizard steps and which one is selected
+**/
 class ConnectedWizardMenu extends React.Component {
     constructor(props) {
         super(props);
@@ -29,9 +34,9 @@ class ConnectedWizardMenu extends React.Component {
         selected={step.selected}/>);
         return (
             <div className="Wizard-menu">
-            <div className="wizard-buttons">
-            {steps}
-            </div>
+                <div className="wizard-buttons">
+                    {steps}
+                </div>
             {this.getStepContent()}
             </div>
         );

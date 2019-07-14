@@ -4,6 +4,9 @@ import IdentityContent from './identityContent';
 import IdentityFooter from './identityFooter';
 import './IdentityVerification.scss';
 
+/**
+Actual content of the modal
+**/
 class IdentityVerification extends React.Component {
     render() {
         return (

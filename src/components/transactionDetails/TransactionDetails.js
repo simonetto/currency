@@ -9,6 +9,11 @@ const mapStateToProps = state => {
     return { transaction: state.details.transaction };
 };
 
+/**
+Content of the right column
+Properties:
+    transaction: object from the back end representing a transaction
+**/
 class ConnectedTransactionDetails extends React.Component {
     componentDidMount() {
         this.props.getData();

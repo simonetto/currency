@@ -24,7 +24,17 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
+/**
+Center of the modal, containing the input boxes
+Parametes:
+    phone: Country code and phone number to send the message to
+    verificationNumber: Array with the verification numbers
+**/
 class ConnectedIdentityContent extends React.Component {
+    /**
+        On mount get the customers phone number from the back end
+        When the modal is opened also send the verification number to the customers phone
+    **/
     componentDidMount() {
         this.props.getData();
         this.props.sendVerificationNumber();
@@ -34,7 +44,7 @@ class ConnectedIdentityContent extends React.Component {
         super(props);
 
         this.state = {
-            focusIndex : 0,
+            focusIndex : 0, //focus the first box
             numbers : this.props.verificationNumber
         };
     }
@@ -47,6 +57,7 @@ class ConnectedIdentityContent extends React.Component {
         this.setState({focusIndex : index});
     }
 
+    //After the user enters a number, select the next one
     setNumber(value) {
         let numbers = this.state.numbers;
         if (this.state.focusIndex < numbers.length) {
@@ -57,9 +68,11 @@ class ConnectedIdentityContent extends React.Component {
             }
         }
 
+        //Send the numbers to the footer
         this.props.enableVerification(this.state.numbers);
     }
 
+    //When the user presses the button to get a new code or to get a phone call
     newCodeHandler(sendNumberFunction) {
         this.setState({numbers : ['', '', '', '', '', ''],
                        focusIndex : 0

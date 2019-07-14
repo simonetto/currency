@@ -2,6 +2,12 @@ import React from 'react';
 import Utils from '../../../utils';
 import './DetailsRow.scss';
 
+/**
+Row of the box of the right
+Properties:
+    detail: object representing a row
+    isFirst: whether it is the first row or note
+**/
 class DetailsRow extends React.Component {
     getValue() {
         const detail = this.props.detail;

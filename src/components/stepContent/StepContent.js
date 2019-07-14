@@ -10,6 +10,11 @@ const mapStateToProps = state => {
     return { transaction: state.details.transaction };
 };
 
+/**
+Content of the first step
+Properties:
+    transaction: object from the back end representing a transaction
+**/
 class ConnectedStepContent extends React.Component {
     constructor(props) {
         super(props);

@@ -1,6 +1,14 @@
 import React from 'react';
 import './WizardButton.scss';
 
+/**
+Header for each of the wizard steps
+Properties:
+numberOfSteps: total number of steps
+stepNumber: the number of the step represented by this instance
+selected: whether this instance is selected
+stepName: The label to display on the step header
+**/
 class WizardButton extends React.Component {
     getProgressClasses() {
         let roundedEdge = '';

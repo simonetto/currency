@@ -1,6 +1,15 @@
 import React from 'react';
 import './IdentityInput.scss';
 
+/**
+Verification inputs
+Properties:
+    index: the order of the box
+    onInput: call back on input
+    onFocus: call back on focus
+    isFocused: whether is focused or note
+    value: the value of the input
+**/
 class IdentityInput extends React.Component {
     onChangeHandler(e) {
         const value = e.target.value;
