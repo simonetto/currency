@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import AppHeader from './AppHeader';
+import { shallow } from 'enzyme';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<AppHeader />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  shallow(<AppHeader />);
+});
+
+it('displays the logo', () => {
+    const wrapper = shallow(<AppHeader />);
+    const icon = <img src="CF_logo_RGB_NEG.svg" className="App-logo" alt="logo" />;
+    expect(wrapper).toContainReact(icon);
 });
