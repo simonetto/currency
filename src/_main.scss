@@ -1,17 +1,35 @@
 body {
-  margin: 0;
-  font-family: Book;
+    margin: 0;
+    font-family: Book;
 }
 
 a {
-  color: $links;
-  font-family: Medium;
+    color: $links;
+    font-family: Medium;
 }
 
 a:link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:visited {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: $small-width) {
+    body {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: $small-width) and (max-width: $medium-width) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: $medium-width) and (max-width: $large-width) {
+    body {
+        font-size: 11px;
+    }
 }

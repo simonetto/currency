@@ -1,10 +1,12 @@
 @import "../../colors";
+@import "../../sizes";
 
 .Button {
     padding: 1em;
     border-radius: 3px;
     outline:none;
     cursor: pointer;
+    font-size: $medium;
 }
 
 .Button.ok {

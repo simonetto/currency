@@ -1,9 +1,10 @@
 @import "../../colors";
+@import "../../sizes";
 
 .Transaction-details {
     border: 1px solid $border;
     border-radius: 5px;
-    font-size: small;
+    font-size: $small;
     position: fixed;
     width: 20em;
 
@@ -23,7 +24,7 @@
         justify-content: center;
         color: $orange-text;
         background-color: white;
-        font-size: x-small;
+        font-size: $small;
         font-family: Medium;
         padding: 1.5em 0;
         border-radius: 0 0 5px 5px;
@@ -35,17 +36,18 @@
     }
 
     .link {
-        font-size: xx-small;
+        font-size: $small;
 
         a {
             display: flex;
+            align-items: center;
         }
     }
 
     .question-mark {
         color: white;
         background-color: $light-blue;
-        font-size: xx-small;
+        font-size: $x-small;
         width: 11px;
         height: 11px;
         justify-content: center;
@@ -57,4 +59,11 @@
 
 .transaction-detail {
     padding: 0 1em 1em 1em;
+}
+
+@media screen and (max-width: $small-width) {
+    .Transaction-details .question-mark {
+        width: 7px;
+        height: 7px;
+    }
 }

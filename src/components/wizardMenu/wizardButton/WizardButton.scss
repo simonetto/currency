@@ -1,4 +1,5 @@
 @import "../../../colors";
+@import "../../../sizes";
 
 .Wizard-button {
     flex: 1;
@@ -11,14 +12,14 @@
 
     .labels-wrapper span {
         margin: 0;
-        font-size: x-small;
+        font-size: $x-small;
         font-family: Medium;
     }
 
     .labels-wrapper p {
         margin: 0 0 1em 0;
         font-family: Medium;
-        font-size: small;
+        font-size: $small;
     }
 
     .progress {
@@ -40,5 +41,11 @@
 
     .progress {
         background-color: $light-blue;
+    }
+}
+
+@media screen and (max-width: $small-width) {
+    .Wizard-button .progress {
+        height: 2px;
     }
 }

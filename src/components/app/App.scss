@@ -1,4 +1,5 @@
 @import "../../colors";
+@import "../../sizes";
 
 .App {
     display: flex;
@@ -29,6 +30,29 @@
         bottom: 0;
         width: 70%;
         z-index: 0;
-        border-bottom: 1px solid $border;
+    }
+}
+
+@media screen and (max-width: $xx-small-width) {
+    .App .page-width {
+        width: 93%;
+    }
+}
+
+@media screen and (min-width: $xx-small-width) and (max-width: $x-small-width) {
+    .App .page-width {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: $x-small-width) and (max-width: $small-width) {
+    .App .page-width {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: $x-small-width) and (max-width: $medium-width) {
+    .App .page-width {
+        width: 70%;
     }
 }

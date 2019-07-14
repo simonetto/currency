@@ -1,4 +1,5 @@
 @import "../../colors";
+@import "../../sizes";
 
 .Step-content {
     .next-button {
@@ -11,7 +12,7 @@
     }
 
     .subtitle {
-        font-size: small;
+        font-size: $small;
         fornt-family: Light;
         color: $dark-grey;
         margin: 0.5em 0 2em 0;

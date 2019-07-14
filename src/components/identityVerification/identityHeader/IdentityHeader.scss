@@ -1,11 +1,12 @@
 @import "../../../colors";
+@import "../../../sizes";
 
 .Identity-header {
     border-bottom: 1px solid $border;
     padding: 1.5em 2em 0.5em 2em;
 
     svg {
-        font-size: large;
+        font-size: $large;
         color: map-get($identity-box, icon);
         margin-right: 0.75em;
     }
@@ -21,7 +22,7 @@
     .content {
         width: 39em;
         color: $grey-text;
-        font-size: small;
+        font-size: $small;
     }
 
     p {
