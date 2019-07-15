@@ -13,6 +13,14 @@
     font-size: $xx-large;
 }
 
+.Identity-input::selection {
+    background: none;
+}
+
+input::-moz-selection {
+    background: none;
+}
+
 .Identity-input:focus {
     outline: none;
     border-color: $links;

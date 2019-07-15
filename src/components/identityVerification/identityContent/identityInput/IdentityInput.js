@@ -14,12 +14,13 @@ class IdentityInput extends React.Component {
     onChangeHandler(e) {
         const value = e.target.value;
 
-        if (/^$|\b[0-9]\b/.test(value)) {
+        if (/^[0-9]?$/.test(value)) {
             this.props.onInput(value);
         }
     }
 
-    onFocusHandler() {
+    onFocusHandler(event) {
+        event.target.select();
         this.props.onFocus(this.props.index);
     }
 
