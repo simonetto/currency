@@ -7,7 +7,7 @@ Properties:
     index: the order of the box
     onInput: call back on input
     onFocus: call back on focus
-    isFocused: whether is focused or note
+    isFocused: whether is focused or not
     value: the value of the input
 **/
 class IdentityInput extends React.Component {
