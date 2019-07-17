@@ -22,7 +22,8 @@ Parametes:
 class ConnectedIdentityFooter extends React.Component {
     //It enables or disables the verification button if all the numbers are entered
     disableVerification() {
-        return this.props.verificationNumber.indexOf('') >= 0;
+        const number = this.props.verificationNumber;
+        return number.length !== 6 || number.indexOf('') >= 0;
     }
 
     handleVerification() {
